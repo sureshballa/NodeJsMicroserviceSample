@@ -4,6 +4,7 @@
         "lib": ["es6", "dom"],
         "types": ["reflect-metadata", "mocha"],
         "module": "commonjs",
+        "outDir": "dist",
         "moduleResolution": "node",
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
@@ -15,5 +16,11 @@
         "resolveJsonModule": true,
         "esModuleInterop": true,
         "allowSyntheticDefaultImports": true
-    }
+    },
+    "include": [
+        "src/**/*.ts"
+      ],
+      "exclude": [
+        "node_modules"
+      ]
 }
