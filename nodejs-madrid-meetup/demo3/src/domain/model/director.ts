@@ -1,5 +1,5 @@
 export interface Director {
-    id?: string;
+    uniqueId?: string;
     name: string;
     yearBorn: number;
     nationality: string;

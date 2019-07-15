@@ -19,10 +19,10 @@ import { SecureController } from "./ui/rest_api/controllers/secure_controller";
 import { SearchController } from "./ui/rest_api/controllers/search_controller";
 
 // Repositories
-import { MovieRepository } from "./infrastructure/data_access/repositories/movie_repository";
-import { DirectorRepository } from "./infrastructure/data_access/repositories/director_repository";
-import { AccountRepository } from "./infrastructure/data_access/repositories/account_repository";
-import { ActorRepository } from "./infrastructure/data_access/repositories/actor_repository";
+import { MovieRepository } from "./infrastructure/data_access/mongodb_repositories/movie_repository";
+import { DirectorRepository } from "./infrastructure/data_access/mongodb_repositories/director_repository";
+import { AccountRepository } from "./infrastructure/data_access/mongodb_repositories/account_repository";
+import { ActorRepository } from "./infrastructure/data_access/mongodb_repositories/actor_repository";
 
 // Services
 import { SearchService } from "./domain/services/search_service";

@@ -6,7 +6,8 @@ import { referenceDataIoCModule } from "./inversify.config";
 async function runApp() {
     const app = await bootstrap(
         container,
-        process.env.APP_PORT || 8080,
+        // (process.env.APP_PORT as number) || 8080, TODO: Please fix this
+        8080,
         process.env.DB_HOST || "localhost",
         process.env.DB_NAME || "demo",
         referenceDataIoCModule

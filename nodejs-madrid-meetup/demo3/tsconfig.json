@@ -11,6 +11,9 @@
         "noImplicitAny": true,
         "noUnusedLocals": true,
         "allowUnreachableCode": false,
-        "noImplicitThis": true
+        "noImplicitThis": true,
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true
     }
 }

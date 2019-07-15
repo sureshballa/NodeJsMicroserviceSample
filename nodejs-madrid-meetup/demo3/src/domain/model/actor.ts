@@ -1,5 +1,5 @@
 export interface Actor {
-    id?: string;
+    uniqueId?: string;
     name: string;
     yearBorn: number;
     nationality: string;

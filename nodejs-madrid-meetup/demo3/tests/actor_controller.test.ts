@@ -5,7 +5,7 @@ import { httpGet } from "./test_utils";
 describe("ActorController", () => {
 
   const expectedActor1: Actor = {
-    id: "5921e3954c2ac9f6162a780a",
+    uniqueId: "5921e3954c2ac9f6162a780a",
     name: "Zoe Saldana",
     yearBorn: 1978,
     nationality: "US",
@@ -13,7 +13,7 @@ describe("ActorController", () => {
   };
 
   function assertActorIsEqual(expectedActor: Actor, actualActor: Actor) {
-    expect(expectedActor.id).to.eq(actualActor.id);
+    expect(expectedActor.uniqueId).to.eq(actualActor.uniqueId);
     expect(expectedActor.name).to.eq(actualActor.name);
     expect(expectedActor.yearBorn).to.eq(actualActor.yearBorn);
     expect(expectedActor.nationality).to.eq(actualActor.nationality);
